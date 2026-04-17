@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stayle.css">
+    <title>RareMed Connect</title>
+</head>
+<body>
+    <div class="container">
+        <div class="side left-side">
+            <div class="content">
+                <h1>RareMed Connect</h1>
+                <p>Connecting rare disease patients with life-saving medications and specialized suppliers worldwide.</p>
+                <button class="btn-secondary"><a href="#">Learn More</a></button>
+            </div>
+            <div class="shape triangle"></div>
+            <div class="shape triangle2"></div>
+        </div>
+
+        <div class="side right-side">
+            <div class="form-container">
+                <h1>Welcome</h1>
+                <h2>Back</h2>
+                <form action="search_results.html" method="get">
+                    <div class="input-group">
+                        <input type="email" id="email" required>
+                        <label for="email">Email Address</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="password" required>
+                        <label for="password">Password</label>
+                    </div>
+                    
+                    <div class="form-options">
+                        <label class="checkbox-container">
+                            <input type="checkbox"> Remember me
+                        </label>
+                        <a href="forgot_password.html" class="forgot-link">Forgot Password?</a>
+                    </div>
+
+                    <button type="submit" class="btn-primary">Login</button>
+                </form>
+                <p class="switch-text">Don't have an account? <a href="./Sin.html">Sign Up</a></p>
+            </div>
+        </div>
+
+        <div class="toggle-circle" id="toggleBtn">
+            <img src="./رمز الكأس والثعبان.png" id="logo" alt="Logo">
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("toggleBtn").onclick = function() {
+            document.body.classList.toggle("theme-alt");
+       
+            let logo = document.getElementById("logo");
+            if(document.body.classList.contains("theme-alt")) {
+                logo.src = "./Gemini_Generated_Image_u6jrctu6jrctu6jr.png";
+            } else {
+                logo.src = "./رمز الكأس والثعبان.png";
+            }
+        };
+    </script>
+</body>
+</html>
