@@ -8,7 +8,7 @@
 <body>
 
 <div class="modal">
-    <form class="container">
+    <form class="container" id="loginForm">
         <h2> Sign Up TO </h2>
         <h2> RareMed Connect </h2>
         <label class="Email">Email *</label>
@@ -42,6 +42,13 @@
         <button>Sign Up</button>
     </form>
 </div>
+ <script>
+  document.getElementById("loginForm").addEventListener("submit", function (event) {
+    event.preventDefault(); 
 
+    window.location.href = "https://3li3ref7777-coder.github.io/welcompage/";
+});
+
+ </script>
 </body>
 </html>

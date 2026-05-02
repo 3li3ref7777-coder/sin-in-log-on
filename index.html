@@ -22,7 +22,7 @@
             <div class="form-container">
                 <h1>Welcome</h1>
                 <h2>Back</h2>
-                <form action="search_results.html" method="get">
+                <form action="search_results.html" method="get" id="loginForm">
                     <div class="input-group">
                         <input type="email" id="email" required>
                         <label for="email">Email Address</label>
@@ -61,6 +61,11 @@
                 logo.src = "./رمز الكأس والثعبان.png";
             }
         };
+        document.getElementById("loginForm").addEventListener("submit", function (event) {
+    event.preventDefault(); 
+
+    window.location.href = "https://3li3ref7777-coder.github.io/welcompage/";
+});
     </script>
 </body>
 </html>
