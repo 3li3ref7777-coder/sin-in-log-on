@@ -5,8 +5,6 @@
     --text-dark: #333;
     --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
 .theme-alt {
     --primary-color: #3d3d9c;
     --bg-light: #7699d3;

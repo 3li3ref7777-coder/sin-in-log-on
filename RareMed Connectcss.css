@@ -1,0 +1,194 @@
+:root {
+    --primary-color: #0d7c7c;
+    --secondary-color: #2fb4b4;
+    --bg-light: #f4f8f9;
+    --white: #ffffff;
+    --text-dark: #333;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    background: var(--white);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: var(--primary-color);
+}
+
+.logo i { margin-right: 10px; font-size: 30px; }
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+
+.nav-links li a {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 600;
+    font-size: 13px;
+    height: 45px;
+    width: 80px; 
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.nav-links li a i {
+    position: absolute;
+    transform: translateY(45px); 
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    color: var(--secondary-color);
+    font-size: 20px;
+}
+
+
+.nav-links li a .link-text {
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-links li a:hover .link-text {
+    transform: translateY(-45px); 
+    opacity: 0;
+}
+
+.nav-links li a:hover i {
+    transform: translateY(0); /* إعادة الأيقونة للمركز */
+    opacity: 1;
+}
+
+
+.hero {
+    background: linear-gradient(rgba(13, 124, 124, 0.85), rgba(13, 124, 124, 0.85)), 
+                url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 { font-size: 3.2rem; margin: 0; letter-spacing: 2px; }
+
+.search-box {
+    background: white;
+    padding: 8px;
+    border-radius: 50px; 
+    display: flex;
+    width: 650px;
+    margin-top: 25px;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.search-box input {
+    flex: 1;
+    border: none;
+    padding: 12px 20px;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+}
+
+.search-box i { color: #888; margin-left: 20px; }
+
+.find-btn {
+    background-color: #6fb98f;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.find-btn:hover { background-color: #5aa37a; }
+
+/* Medicine Cards Styles */
+.medicines-section { padding: 60px 5%; text-align: center; }
+.medicines-section h2 { margin-bottom: 40px; color: var(--primary-color); letter-spacing: 1px; }
+
+.medicine-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.med-card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    transition: all 0.3s ease;
+    border: 1px solid #eee;
+}
+
+.med-card:hover { transform: translateY(-10px); box-shadow: 0 12px 25px rgba(0,0,0,0.1); }
+
+.med-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.status {
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+.available { background: #e8f5e9; color: #2e7d32; }
+.limited { background: #fff3e0; color: #ef6c00; }
+.tracking { background: #e3f2fd; color: #1565c0; }
+
+.request-btn {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: opacity 0.3s;
+}
+
+.request-btn:hover { opacity: 0.9; }

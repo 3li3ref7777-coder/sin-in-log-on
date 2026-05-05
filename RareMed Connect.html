@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RareMed Connect - Find Scarce Medicines</title>
+    <link rel="stylesheet" href="./RareMed Connectcss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fas fa-cocktail"></i>
+                <span>RareMed <strong>Connect</strong></span>
+            </div>
+           <ul class="nav-links">
+    <li>
+        <a href="#">
+            <i class="fas fa-home"></i>
+            <span class="link-text">HOME</span>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <i class="fas fa-search"></i>
+            <span class="link-text">SEARCH</span>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <i class="fas fa-clinic-medical"></i>
+            <span class="link-text">PHARMACIES</span>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <i class="fas fa-file-medical"></i>
+            <span class="link-text">REQUESTS</span>
+        </a>
+    </li>
+    <li>
+        <a href="./abutme.html">
+            <i class="fas fa-info-circle"></i>
+            <span class="link-text">ABOUT</span>
+        </a>
+    </li>
+</ul>
+           
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>RAREMED CONNECT</h1>
+            <p>FIND SCARCE MEDICINES.</p>
+            <div class="search-container">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="SEARCH FOR MEDICINES, DRUGS, SUPPLIERS...">
+                    <button class="find-btn">FIND NOW</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="medicines-section">
+        <h2> RARE MEDICINES</h2>
+        <div class="medicine-grid" id="medicineGrid">
+        </div>
+    </section>
+
+    <script src="./RareMed Connectjs.js"></script>
+</body>
+</html>
