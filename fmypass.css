@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif; /* Clean modern font */
+    font-family: 'Poppins', sans-serif; 
 }
 
 body {
@@ -14,7 +14,7 @@ body {
     overflow: hidden;
 }
 
-/* Glassmorphism Card */
+
 .glass-card {
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(15px);
@@ -61,7 +61,7 @@ p {
     box-shadow: 0 0 10px rgba(0, 210, 255, 0.3);
 }
 
-/* Neon Button Effect */
+
 .neon-btn {
     width: 100%;
     padding: 14px;

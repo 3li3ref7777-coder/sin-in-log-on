@@ -83,7 +83,7 @@ body {
 }
 
 .nav-links li a:hover i {
-    transform: translateY(0); /* إعادة الأيقونة للمركز */
+    transform: translateY(0); 
     opacity: 1;
 }
 
@@ -137,8 +137,6 @@ body {
 }
 
 .find-btn:hover { background-color: #5aa37a; }
-
-/* Medicine Cards Styles */
 .medicines-section { padding: 60px 5%; text-align: center; }
 .medicines-section h2 { margin-bottom: 40px; color: var(--primary-color); letter-spacing: 1px; }
 
